@@ -1,0 +1,696 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'myfont';
+    /* Choose a name for your font family */
+    src: url('../FONT/MontserratRegular.otf');
+}
+
+@font-face {
+    font-family: 'myfontBold';
+    /* Choose a name for your font family */
+    src: url('../FONT/MontserratBold.ttf');
+}
+
+@font-face {
+    font-family: 'myfontLight';
+    /* Choose a name for your font family */
+    src: url('../FONT/Montserrat-Light.ttf');
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'myfont';
+    width: 100%;
+    max-width: 1920px;
+}
+
+/* general classes  */
+.flex {
+    display: flex;
+}
+
+.j-c {
+    justify-content: center;
+}
+
+.a-c {
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+}
+
+header {
+    width: 100%;
+    background-color: #faf8f3;
+    height: 140px;
+    justify-content: start;
+}
+
+nav {
+    padding: 30px;
+}
+
+.logo {
+    width: 190px;
+    height: 93px;
+}
+
+/* hero section  */
+.hero {
+    /* height: 100vh; */
+    border-top: 4px solid #464646;
+    border-bottom: 4px solid #464646;
+}
+
+.leftHero {
+    width: 60%;
+    height: 100%;
+    padding: 30px 0;
+}
+
+.topHeading {
+    font-size: 30px;
+    line-height: 83px;
+    color: #c8ae87;
+    font-weight: 700;
+    text-align: center;
+}
+
+.leftHeroBOld {
+    font-size: 83px;
+    line-height: 91px;
+    color: #464646;
+    font-weight: 800;
+    font-family: 'myfontBold';
+    text-align: center;
+}
+
+.smallSecondHead {
+    font-size: 41px;
+    color: #464646;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.drConente {
+    font-size: 30px;
+    color: #464646;
+    text-align: center;
+}
+
+.lightDetails {
+    font-size: 28px;
+    max-width: 670px;
+    line-height: 45px;
+    color: #282525;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'myfontLight';
+}
+
+.detasilLefthero {
+    flex-direction: column;
+}
+
+.heroBtns {
+    max-width: 670px;
+    width: 500px;
+    height: 70px;
+    background-color: #dec195;
+    color: #464646;
+    font-size: 30px;
+    border-radius: 18px;
+    font-family: 'myfontBold';
+}
+
+.rightHero {
+    width: 40%;
+}
+
+.rightHero img {
+    width: 100%;
+    height: 100%;
+}
+
+.google {
+    width: 50px;
+}
+
+.secondMain {
+    width: 100%;
+    max-width: 1920px;
+}
+
+.leftImg {
+    width: 45%;
+}
+
+.rightSecCont {
+    width: 45%;
+}
+
+.secondSection {
+    /* height: 100vh; */
+    background-color: #faf8f3;
+    padding: 60px 0;
+    border-bottom: 4px solid #464646;
+}
+
+.leftImg {
+    height: 100%;
+}
+
+/* scrollerSection */
+.scrollerSection {
+    padding: 60px 0;
+}
+
+.leftImg img {
+    height: 100%;
+    width: 500px;
+}
+
+.secHedingScrol {
+    font-size: 60px;
+}
+
+.secHeading {
+    font-size: 30px;
+    color: #464646;
+}
+
+.rightSecCont h2 {
+    font-size: 20px;
+}
+
+.color {
+    color: #464646;
+}
+
+.check {
+    width: 19px;
+}
+
+.checkText {
+    font-size: 18px;
+    margin-left: 11px;
+}
+
+.list div {
+    margin-top: 15px;
+}
+
+.secondfBtn {
+    width: 400px;
+    font-size: 25px;
+}
+
+.extpadd {
+    padding: 0 50px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    padding: 20px 0;
+    /* overflow-y: auto; */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination {
+    position: relative !important;
+    height: 10px !important;
+    top: 20px !important;
+}
+
+.buttons {
+    position: relative;
+    bottom: 39px;
+}
+
+.buttons button {
+    width: 50%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-family: 'myfont';
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.fBtn {
+    background-color: #dec195;
+    color: #464646;
+}
+
+.sBtn {
+    background-color: #464646;
+    color: white;
+    cursor: pointer;
+}
+
+.card {
+    height: 620px;
+    width: 100%;
+}
+.swiper{
+    padding: 20px!important;
+    width: calc(100% - 40px)!important;
+}
+.swiper-slide img{
+    object-fit: inherit;
+}
+.swiper-button-prev {
+    right: 10px !important;
+    /* Adjust the right distance as needed */
+    left: auto !important;
+    /* Remove left positioning */
+    top: 30% !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #464646;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background-color: #dec195;
+}
+.btnDiv{
+    background-color: #464646;
+    width: 25%;
+}
+.btnDiv button{
+    width: 100%;
+    height: 100px;
+    background-color: #464646;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.discover{
+    width: 50px;
+    height: 50px;
+}
+.btnDiv button span{
+   position: relative;
+   top: 10px;
+}
+.alltabs{
+    flex-direction: column;
+}
+.tabs{
+    width: 80%;
+    background-color: #464646;
+    justify-content: space-between;
+}
+.views{
+    width: 80%;
+    margin-top: 30px;
+}
+#viewOne, #viewTwo, #viewThree, #viewFour{
+    width: 100%;
+    background-color: red;
+    height: 500px;
+    display: none;
+}
+#viewTwo{
+    background-color: #464646;
+    display: flex;
+}
+#viewTwo img{
+    width: 100%;
+}
+#btn1, #btn2, #btn3, #btn4  {
+    position: relative;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.active::after{
+    content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 19px solid transparent;
+  border-top: 19px solid #dec195;
+  top: 99%;
+}
+.active{
+    background-color: #dec195!important;
+    color: black!important;
+}
+#viewThree{
+    background-color: aqua;
+    display: none;
+}
+#viewFour{
+    background-color: blueviolet;
+    display: none;
+}
+.howWeHelp{
+    border-bottom: 4px solid #464646;
+    padding: 50px 0;
+}
+.containerViews{
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    border: 1px solid #464646;
+}
+.leftView{
+    background-color: #faf8f3;
+    width: 55%;
+    height: 100%;
+}
+.rightImgView{
+    width: 45%;
+    height: 100%;
+}
+.rightImgView img{
+    width: 100%;
+    height: 100%;
+}
+.imgdot{
+    width: 100%;
+    text-align: center;
+}
+.imgdot img{
+    width: 150px!important;
+}
+.leftView{
+    flex-direction: column;
+}
+.VIEWTOWBOLD{
+    font-size: 35px;
+}
+.view2para{
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'myfont';
+    color: #464646;
+    width: 350px;
+    text-align: center;
+}
+.booking{
+    padding: 70px 0;
+    background-color: #faf8f3;
+}
+.bookingheading{
+    width: 80%;
+    font-size: 60px;
+    font-family: 'myfontBold';
+    line-height: 60px;
+}
+.half{
+    width: 80%;
+    height: 670px;
+}
+.dot{
+    width: 17px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #c8ae87;
+    margin-right: 20px;
+    margin-top: 10px;   
+}
+.text{
+    line-height: 27px;
+}
+.leftDots{
+    gap: 40px;
+    padding: 0 50px;
+}
+.google{
+    width: 100%;
+    height: 100%;
+}
+.gobbtn{
+    background-image: url('../img/google.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 23px;
+    height: 70px;
+    background-color: transparent;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+.swiper-slide{
+    margin-right: 10px!important;
+}
+
+
+@media (max-width: 900px) and (min-width: 200px){
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .leftHero {
+        width: 100%;
+    }
+
+    .leftHeroContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .topHeading {
+        font-size: 20px;
+    }
+
+    .leftHeroBOld {
+        font-size: 37px;
+        line-height: 50px;
+    }
+
+    .detasilLefthero {
+        width: 80%;
+    }
+
+    .smallSecondHead {
+        font-size: 26px;
+    }
+
+    .drConente {
+        font-size: 15px;
+    }
+
+    .lightDetails {
+        font-size: 14px;
+        line-height: 32px;
+        width: 100%;
+    }
+
+    .heroBtns {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .rightHero, .leftView, .bookinghero {
+        width: 100%;
+    }
+    .bookingheading{
+        font-size: 34px;
+    }
+    .secondSection, .half {
+        height: auto;
+    }
+    .containerViews{
+        border: none;
+    }
+    .leftDots{
+        padding-top: 40px;
+    }
+    .secondMain {
+        display: table;
+    }
+
+    .rightSecCont {
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+
+    .leftImg {
+        width: 100%;
+        display: table-footer-group;
+    }
+
+    .leftImg img, .rightImgView {
+        width: 100%;
+    }
+    #viewTwo, #viewOne, #viewTwo, #viewThree, #viewFour{
+        height: auto;
+    }
+    .secHeading {
+        font-size: 25px;
+    }
+
+    .checkText {
+        font-size: 17px;
+    }
+
+    .subhead {
+        font-size: 20px;
+    }
+
+    .no {
+        display: none;
+    }
+    .tabs{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .btnDiv button{
+        width: 100%;
+        font-size: 10px;
+    }
+    .discover{
+        height: 40px;
+        width: 32px;
+    }
+    .containerViews{
+        flex-direction: column;
+    }
+    .VIEWTOWBOLD{
+        font-size: 21px;
+    }
+    .imgdot img{
+        width: 100px!important;
+    }
+    .view2para{
+        width: 90%;
+        padding: 10px;
+    }
+    .btnDiv button span{
+        font-size: 9px  ;
+    }
+
+    .gobbtn{
+        height: 72px;
+        border: 1px solid gray;
+    }
+}
+
+@media (max-width: 500px) {
+    .dot{
+        width: 32px;
+    }
+    .gobbtn{
+        height: 50px;
+        border: 1px solid gray;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1280px) {
+    .leftHero, .rightImgView, .leftView{
+        width: 50%;
+    }
+    .rightHero{
+        width: 50%;
+    }
+    .leftHeroBOld {
+        font-size: 43px; /* Adjust font size as needed */
+    }
+    .leftHeroBOld{
+        line-height: 60px;
+    }
+    .smallSecondHead{
+        font-size: 35px;
+    }
+    .drConente{
+        font-size: 19px;
+    }
+    .lightDetails, .checkText{
+        font-size: 16px;
+    }
+    .topHeading{
+        font-size: 23px;
+    }
+    .heroBtns{
+        max-width: 462px;
+    }
+    .heroBtns{
+        font-size: 22px;
+    }
+    .leftImg img {
+        width: 400px;
+    }
+    .secHeading {
+        font-size: 24px;
+    }
+    .check{
+        width: 16px;
+    }
+    .imgdot img {
+        width: 115px!important;
+    }
+    .leftHeroBOld{
+        line-height: 40px;
+        font-size: 23px;
+    }
+    .view2para, .btnDiv button span{
+        font-size: 12px;
+    }
+    .leftDots{
+        padding: 0;
+    }
+    .contentvi{
+        padding-left: 15px;
+    }
+    .text {
+        line-height: 22px;
+        font-size: 15px;
+    }
+    .dot {
+        width: 26px;
+    }
+    .half{
+        height: 560px;
+    }
+}
+
